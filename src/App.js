@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import SearchBox from './components/SearchBox';
 import Card from './components/Card';
+import UserProfile from './components/UserProfile';
 import users from './components/users.json';
 import './App.css';
 import 'tachyons';
@@ -30,7 +31,8 @@ class App extends Component {
     return (
       <div>
         <SearchBox updateSearchInput={this.updateSearchInput} />
-        <Card users={this.state.users} />
+        <Card users={this.state.users.reverse()} />
+        {/* <UserProfile /> */}
       </div>
     );
   }

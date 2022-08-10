@@ -1,6 +1,7 @@
 import React from 'react';
 
 function Card({users}) {
+    console.log(users.reverse());
     return(
         <div className="card-container">
         {

@@ -42,3 +42,8 @@ code {
   align-items: center;
   justify-content: center;
 }
+
+.user_profile{
+  width: 100%;
+  background-color: rgb(41, 41, 222);
+}
