@@ -7,7 +7,7 @@ function Card({users}) {
         {
           users.map((user) => ( 
             <div key={user.id} className="card">
-                <img src={`https://robohash.org/${user.id}`} alt={user.name} />
+                <img src={`https://robohash.org/${user.id}?set=set4`} alt={user.name} />
                 <h4>{user.name}</h4>
                 <p>{user.email}</p>
             </div>
