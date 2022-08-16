@@ -1,7 +1,7 @@
 [
     {
       "id": 1,
-      "name": "Ardel Mbiplang",
+      "name": "Mr. Ardel Mbiplang",
       "username": "Bret",
       "email": "Sincere@april.biz",
       "address": {
@@ -47,7 +47,7 @@
     },
     {
       "id": 3,
-      "name": "GOVERNOR ",
+      "name": "GOVERNOR",
       "username": "Samantha",
       "email": "Hamidat@yesenia.net",
       "address": {
@@ -70,7 +70,7 @@
     },
     {
       "id": 4,
-      "name": "Samson",
+      "name": "Mr. Samson",
       "username": "Karianne",
       "email": "Julianne.OConner@kory.org",
       "address": {
@@ -277,7 +277,7 @@
     },
     {
       "id": 13,
-      "name": "Lazarus Umeh",
+      "name": "Mr. Lazarus Umeh",
       "username": "Moriah.Stanton",
       "email": "Rey.Padberg@karina.biz",
       "address": {
