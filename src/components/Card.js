@@ -1,7 +1,7 @@
 import React from 'react';
 
 function Card({users}) {
-    console.log(users.reverse());
+    // console.log(users.reverse());
     return(
         <div className="card-container">
         {
@@ -13,6 +13,7 @@ function Card({users}) {
             </div>
             ))
         }
+        {users.length > 0 ? "" : <p>NO DATA FOUND</p>}
         </div>
     );
 }

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import SearchBox from './components/SearchBox';
 import Card from './components/Card';
-import users from './components/users.json';
+// import users from './components/users.json';
 import './App.css';
 // import 'tachyons';
 
@@ -9,19 +9,30 @@ class App extends Component {
   constructor(){
     super();
     this.state = {
-      users: users
+      searchUpdate: '',
+      users: [],
+      users2: []
     }
   }
   // users = [];
-  // fetch('http://jsonplaceholder.typicode.com/users')
-  // .then((response) => (response.json()))
-  // .then((response) => (users = response)
-  // .catch((err) => (console.log(err)))
+componentDidMount(){
+  fetch('http://jsonplaceholder.typicode.com/users')
+  .then((response) => (response.json()))
+  .then((response) => {
+    this.setState({users : response})
+    this.setState({users2 : response})
+  })
+  .catch((err) => (console.log(err)))
+  }
+
   
-  updateSearchInput = (searchContent) => {
+  updateSearchInput = (event) => {
+    // this.setState();
+    // filteredRobots = 
     this.setState({
-      users: users.filter((user) => (
-        user.name.toLowerCase().includes(searchContent.toLowerCase())
+      searchContent: event.target.value,
+      users: this.state.users2.filter((user) => (
+        user.name.toLowerCase().includes(event.target.value.toLowerCase())
       ))
     });
   }
