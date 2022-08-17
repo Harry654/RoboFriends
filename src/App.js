@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import SearchBox from './components/SearchBox';
-import Card from './components/Card';
-import users from './components/users.json';
+// import { Routes, Route, Link } from 'react-router-dom';
+import CardList from './components/CardList';
+import ErrorHandler from './components/ErrorHandler';
 import './App.css';
 // import 'tachyons';
 
@@ -30,23 +30,19 @@ function App () {
 
   
   const updateSearchInput = (event) => {
-    // this.setState();
-    // filteredRobots = 
     setSearchContent(event.target.value);
     setUsers(
       users2.filter((user) => (
         user.name.toLowerCase().includes(event.target.value.toLowerCase())
       ))
     );
-    // this.setState({
-    //   users: this.state.
-    // });
   }
 
   return (
     <div>
-      <SearchBox updateSearchInput={updateSearchInput} searchContent={searchContent} />
-      <Card users={users} loading={loading} connected={connected} />
+      <ErrorHandler>
+        <CardList users={users} loading={loading} connected={connected} updateSearchInput={updateSearchInput} searchContent={searchContent} />
+      </ErrorHandler>
     </div>
   );
 }
