@@ -16,8 +16,8 @@ function App () {
     fetch('https://jsonplaceholder.typicode.com/users')
     .then((response) => (response.json()))
     .then((response) => {
-      setUsers(response);
-      setUsers2(response);
+      setUsers(response.reverse());
+      setUsers2(response.reverse());
       // console.log(response);
     })
     .catch((err) => {
