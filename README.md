@@ -1,6 +1,6 @@
 A profile of my cat friends.
 
-The user data was gotten from https://jsonplaceholder.typicode.com
+The user data was gotten from https://jsonplaceholder.typicode.com/users
 
 The cat images were gotten from https://robohash.org?set=4
 
